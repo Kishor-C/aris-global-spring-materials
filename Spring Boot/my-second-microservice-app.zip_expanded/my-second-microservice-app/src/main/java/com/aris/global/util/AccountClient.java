@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.aris.global.model.Account;
 
-@FeignClient("http://FIRST-APP/")
+
+// we can use zuul-api gateway here
+@FeignClient("http://zuul-api/first-app")
 public interface AccountClient {
 
 	// this below method calls remote service i.e., http://FIRST-APP/account/1234
