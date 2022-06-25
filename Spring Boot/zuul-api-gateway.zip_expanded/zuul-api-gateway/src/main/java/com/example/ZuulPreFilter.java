@@ -22,14 +22,14 @@ public class ZuulPreFilter extends ZuulFilter{
 		// when request passed to multiple microservices we can add correlation id if 
 		// the id is not present else we will not add
 		System.out.println("------------ PRE FILTER ---------------");
-		RequestContext ctx = RequestContext.getCurrentContext();
-		ctx.setSendZuulResponse(false);
-		int randomNumber = new Double(Math.random() * 100000).intValue();
-		LocalTime time = LocalTime.now();
-		ctx.addZuulRequestHeader("correlation-id", String.valueOf(randomNumber));
-		ctx.addZuulRequestHeader("time", time.toString());
-		System.out.println("Added Id: "+randomNumber);
-		System.out.println("--------Request URI: "+ctx.getRequest().getRequestURI()+"----------");
+//		RequestContext ctx = RequestContext.getCurrentContext();
+//		ctx.setSendZuulResponse(false);
+//		int randomNumber = new Double(Math.random() * 100000).intValue();
+//		LocalTime time = LocalTime.now();
+//		ctx.addZuulRequestHeader("correlation-id", String.valueOf(randomNumber));
+//		ctx.addZuulRequestHeader("time", time.toString());
+//		System.out.println("Added Id: "+randomNumber);
+//		System.out.println("--------Request URI: "+ctx.getRequest().getRequestURI()+"----------");
 		return null;
 	}
 
