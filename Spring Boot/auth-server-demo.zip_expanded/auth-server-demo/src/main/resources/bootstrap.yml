@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: oauth-service
+
+# a key for cyrptographical signaure in JWT, it is used by JWT token converter
+# this key you can pass through command line for more security --sign.key=myscuredkey
+sign:
+  key: mysecuredkey

@@ -1,0 +1,32 @@
+server:
+  port: 8081
+# actuator end point to check the state of the circuit breaker like health
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  health:
+    circuitbreakers:
+      enabled: true
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      callAccountService:
+        register-health-indicator: true
+        ring-buffer-size-in-closed-state: 6
+        ring-buffer-size-in-half-open-state: 3
+        wait-duration-in-open-state: 50s
+        failure-rate-threshold: 50
+spring:
+  zipkin:
+    base-url: http://localhost:9411/
+
+
+logging:
+  file:
+    name: C:/Users/Kishor/Desktop/service-logs/simple.log  

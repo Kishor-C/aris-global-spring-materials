@@ -1,0 +1,122 @@
+2022-07-06 22:17:47.409  INFO [first-app,,,] 3048 --- [restartedMain] c.a.g.MyFirstMicroserviceAppApplication  : No active profile set, falling back to default profiles: default
+2022-07-06 22:17:49.437  INFO [first-app,,,] 3048 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=309f92d9-0617-3159-ab96-3e6e275b27bd
+2022-07-06 22:17:50.362  INFO [first-app,,,] 3048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9093 (http)
+2022-07-06 22:17:50.369  INFO [first-app,,,] 3048 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-06 22:17:50.371  INFO [first-app,,,] 3048 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-07-06 22:17:50.479  INFO [first-app,,,] 3048 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-06 22:17:50.480  INFO [first-app,,,] 3048 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3059 ms
+2022-07-06 22:17:53.666  WARN [first-app,,,] 3048 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-07-06 22:17:53.667  INFO [first-app,,,] 3048 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-07-06 22:17:54.075  INFO [first-app,,,] 3048 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-06 22:17:54.681  INFO [first-app,,,] 3048 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d6768a56-11e1-4b63-9946-f722146086ff
+
+2022-07-06 22:17:54.845  INFO [first-app,,,] 3048 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e3717d2, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f9b547b, org.springframework.security.web.header.HeaderWriterFilter@39077ce4, org.springframework.security.web.authentication.logout.LogoutFilter@55172ce4, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@7af21625, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f7c6776, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4272b5f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24d2ed49, org.springframework.security.web.session.SessionManagementFilter@5de0d539, org.springframework.security.web.access.ExceptionTranslationFilter@6f444e44, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a9da1bb]
+2022-07-06 22:17:55.040  WARN [first-app,,,] 3048 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-06 22:17:56.477  INFO [first-app,,,] 3048 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2022-07-06 22:17:56.699  WARN [first-app,,,] 3048 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-07-06 22:17:58.257  WARN [first-app,,,] 3048 --- [restartedMain] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2022-07-06 22:17:58.444  INFO [first-app,,,] 3048 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-07-06 22:17:58.538  INFO [first-app,,,] 3048 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-06 22:17:58.549  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-06 22:17:58.553  INFO [first-app,,,] 3048 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-07-06 22:17:58.554  INFO [first-app,,,] 3048 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-07-06 22:17:58.554  INFO [first-app,,,] 3048 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-07-06 22:17:58.554  INFO [first-app,,,] 3048 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-07-06 22:17:58.810  INFO [first-app,,,] 3048 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-06 22:17:58.816  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-06 22:17:58.817  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-06 22:17:58.817  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-06 22:17:58.818  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-06 22:17:58.819  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-06 22:17:58.819  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-06 22:17:58.819  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-06 22:17:58.830  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-06 22:17:58.832  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-06 22:17:58.941  INFO [first-app,,,] 3048 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-06 22:17:58.949  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1657126078948 with initial instances count: 4
+2022-07-06 22:17:58.967  INFO [first-app,,,] 3048 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application FIRST-APP with eureka with status UP
+2022-07-06 22:17:58.968  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657126078968, current=UP, previous=STARTING]
+2022-07-06 22:17:58.970  INFO [first-app,,,] 3048 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FIRST-APP/KishorC:first-app:9093: registering service...
+2022-07-06 22:17:58.987  INFO [first-app,,,] 3048 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FIRST-APP/KishorC:first-app:9093 - registration status: 204
+2022-07-06 22:17:58.994  INFO [first-app,,,] 3048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9093 (http) with context path ''
+2022-07-06 22:17:58.995  INFO [first-app,,,] 3048 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9093
+2022-07-06 22:18:00.194  INFO [first-app,,,] 3048 --- [restartedMain] c.a.g.MyFirstMicroserviceAppApplication  : Started MyFirstMicroserviceAppApplication in 15.748 seconds (JVM running for 1591.254)
+2022-07-06 22:18:00.202  INFO [first-app,,,] 3048 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-06 22:19:40.238  INFO [first-app,,,] 3048 --- [http-nio-9093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-06 22:19:40.239  INFO [first-app,,,] 3048 --- [http-nio-9093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-06 22:19:40.275  INFO [first-app,,,] 3048 --- [http-nio-9093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2022-07-06 22:19:40.339  INFO [first-app,2f213cc7629e6e51,18f1f1b2c52246b1,true] 3048 --- [http-nio-9093-exec-1] c.a.global.controller.AccountController  : ::Inside First Microservice Account::
+2022-07-06 22:22:58.847  INFO [first-app,,,] 3048 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-06 22:27:58.850  INFO [first-app,,,] 3048 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-06 22:28:53.282  WARN [first-app,9935db17fb9ecf8d,d71c8f132249d90f,true] 3048 --- [http-nio-9093-exec-3] o.s.b.a.s.o.r.UserInfoTokenServices      : Could not fetch user details: class org.springframework.web.client.HttpServerErrorException$InternalServerError, 500 : [{"timestamp":"2022-07-06T16:58:53.213+00:00","status":500,"error":"Internal Server Error","message":""}]
+2022-07-06 22:29:00.501  INFO [first-app,84791928b881b44b,bd38d0765a1ac7f4,true] 3048 --- [http-nio-9093-exec-5] c.a.global.controller.AccountController  : ::Inside First Microservice Account::
+2022-07-06 22:29:22.947  INFO [first-app,,,] 3048 --- [Thread-18] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application FIRST-APP with eureka with status DOWN
+2022-07-06 22:29:22.949 ERROR [first-app,,,] 3048 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657126762949, current=DOWN, previous=UP]
+2022-07-06 22:29:22.950  INFO [first-app,,,] 3048 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FIRST-APP/KishorC:first-app:9093: registering service...
+2022-07-06 22:29:22.969  INFO [first-app,,,] 3048 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FIRST-APP/KishorC:first-app:9093 - registration status: 204
+2022-07-06 22:29:23.759  INFO [first-app,,,] 3048 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-06 22:29:24.486  INFO [first-app,,,] 3048 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-06 22:29:27.501  INFO [first-app,,,] 3048 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-06 22:29:27.517  INFO [first-app,,,] 3048 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FIRST-APP/KishorC:first-app:9093 - deregister  status: 200
+2022-07-06 22:29:27.537  INFO [first-app,,,] 3048 --- [Thread-18] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-07-06 22:29:30.741  INFO [first-app,,,] 3048 --- [restartedMain] c.a.g.MyFirstMicroserviceAppApplication  : No active profile set, falling back to default profiles: default
+2022-07-06 22:29:32.433  INFO [first-app,,,] 3048 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=309f92d9-0617-3159-ab96-3e6e275b27bd
+2022-07-06 22:29:33.217  INFO [first-app,,,] 3048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9093 (http)
+2022-07-06 22:29:33.218  INFO [first-app,,,] 3048 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-06 22:29:33.219  INFO [first-app,,,] 3048 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-07-06 22:29:33.291  INFO [first-app,,,] 3048 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-06 22:29:33.291  INFO [first-app,,,] 3048 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2542 ms
+2022-07-06 22:29:35.940  WARN [first-app,,,] 3048 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-07-06 22:29:35.942  INFO [first-app,,,] 3048 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-07-06 22:29:36.296  INFO [first-app,,,] 3048 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-06 22:29:36.859  INFO [first-app,,,] 3048 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 16f21e1e-76b3-41cf-9c2d-020f809fafed
+
+2022-07-06 22:29:36.990  INFO [first-app,,,] 3048 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@224e57bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@3fa28528, org.springframework.security.web.header.HeaderWriterFilter@54cba63a, org.springframework.security.web.authentication.logout.LogoutFilter@84b7f88, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@45235009, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54a90c8f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75758a2d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@464365e1, org.springframework.security.web.session.SessionManagementFilter@7a37e45, org.springframework.security.web.access.ExceptionTranslationFilter@631bbf6b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@558ec34c]
+2022-07-06 22:29:37.132  WARN [first-app,,,] 3048 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-06 22:29:38.417  INFO [first-app,,,] 3048 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2022-07-06 22:29:38.662  WARN [first-app,,,] 3048 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-07-06 22:29:40.085  WARN [first-app,,,] 3048 --- [restartedMain] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2022-07-06 22:29:40.264  INFO [first-app,,,] 3048 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-07-06 22:29:40.367  INFO [first-app,,,] 3048 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-06 22:29:40.381  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-06 22:29:40.385  INFO [first-app,,,] 3048 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-07-06 22:29:40.386  INFO [first-app,,,] 3048 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-07-06 22:29:40.387  INFO [first-app,,,] 3048 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-07-06 22:29:40.388  INFO [first-app,,,] 3048 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-07-06 22:29:40.613  INFO [first-app,,,] 3048 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-06 22:29:40.618  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-06 22:29:40.619  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-06 22:29:40.619  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-06 22:29:40.619  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-06 22:29:40.620  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-06 22:29:40.620  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-06 22:29:40.620  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-06 22:29:40.629  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-06 22:29:40.631  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-06 22:29:40.634  INFO [first-app,,,] 3048 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-06 22:29:40.636  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1657126780636 with initial instances count: 3
+2022-07-06 22:29:40.730  INFO [first-app,,,] 3048 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application FIRST-APP with eureka with status UP
+2022-07-06 22:29:40.731  INFO [first-app,,,] 3048 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657126780731, current=UP, previous=STARTING]
+2022-07-06 22:29:40.733  INFO [first-app,,,] 3048 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FIRST-APP/KishorC:first-app:9093: registering service...
+2022-07-06 22:29:40.751  INFO [first-app,,,] 3048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9093 (http) with context path ''
+2022-07-06 22:29:40.752  INFO [first-app,,,] 3048 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9093
+2022-07-06 22:29:40.769  INFO [first-app,,,] 3048 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FIRST-APP/KishorC:first-app:9093 - registration status: 204
+2022-07-06 22:29:42.386  INFO [first-app,,,] 3048 --- [restartedMain] c.a.g.MyFirstMicroserviceAppApplication  : Started MyFirstMicroserviceAppApplication in 14.144 seconds (JVM running for 2293.446)
+2022-07-06 22:29:42.393  INFO [first-app,,,] 3048 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-06 22:30:33.361  INFO [first-app,,,] 3048 --- [http-nio-9093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-06 22:30:33.361  INFO [first-app,,,] 3048 --- [http-nio-9093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-06 22:30:33.389  INFO [first-app,,,] 3048 --- [http-nio-9093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2022-07-06 22:30:33.612  INFO [first-app,64ec09b9cf8cee24,64ec09b9cf8cee24,true] 3048 --- [http-nio-9093-exec-1] c.a.global.controller.AccountController  : ::Inside First Microservice Account::
+2022-07-06 22:32:23.031  INFO [first-app,,,] 3048 --- [Thread-26] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application FIRST-APP with eureka with status DOWN
+2022-07-06 22:32:23.034 ERROR [first-app,,,] 3048 --- [Thread-26] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657126943034, current=DOWN, previous=UP]
+2022-07-06 22:32:23.046  INFO [first-app,,,] 3048 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FIRST-APP/KishorC:first-app:9093: registering service...
+2022-07-06 22:32:23.059  INFO [first-app,,,] 3048 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FIRST-APP/KishorC:first-app:9093 - registration status: 204
+2022-07-06 22:32:24.100  INFO [first-app,,,] 3048 --- [Thread-26] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-06 22:32:24.612  INFO [first-app,,,] 3048 --- [Thread-26] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-06 22:32:27.629  INFO [first-app,,,] 3048 --- [Thread-26] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-06 22:32:27.648  INFO [first-app,,,] 3048 --- [Thread-26] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FIRST-APP/KishorC:first-app:9093 - deregister  status: 200
+2022-07-06 22:32:27.690  INFO [first-app,,,] 3048 --- [Thread-26] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

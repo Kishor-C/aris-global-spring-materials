@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: auth-client
+# uri that is used by @EnableResourceServer to send token & apply access controls accordingly
+security:  oauth2:    resource:      user-info-uri: http://localhost:9999/oauth-service/user

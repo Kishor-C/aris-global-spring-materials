@@ -1,0 +1,6 @@
+server:
+  port: 7071
+  
+# registering this in eureka when @EnableEurekaClient
+eureka:  client:    register-with-eureka: true
+    fetch-registry: true

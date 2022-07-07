@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.aris.global.model.Account;
 
-
-// we can use zuul-api gateway here
 @FeignClient("http://zuul-api/first-app")
 public interface AccountClient {
 
