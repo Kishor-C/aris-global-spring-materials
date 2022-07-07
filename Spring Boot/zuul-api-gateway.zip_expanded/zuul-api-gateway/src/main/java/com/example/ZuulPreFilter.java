@@ -1,11 +1,9 @@
 package com.example;
 
-import java.time.LocalTime;
 
 import org.springframework.context.annotation.Configuration;
 
 import com.netflix.zuul.ZuulFilter;
-import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
 @Configuration
 public class ZuulPreFilter extends ZuulFilter{

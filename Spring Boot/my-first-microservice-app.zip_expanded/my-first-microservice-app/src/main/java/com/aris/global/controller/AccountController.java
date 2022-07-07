@@ -26,19 +26,19 @@ public class AccountController {
 		String result = accountService.test();
 		return ResponseEntity.status(HttpStatus.OK).body(result);
 	}
-	@PostMapping("/store")
+	@PostMapping(path = "/store")
 	public String greet1() {
 		return "Post method";
 	}
-	@DeleteMapping("/delete")
+	@DeleteMapping(path = "/delete")
 	public String greet2() {
 		return "Delete method";
 	}
-	@PutMapping("/update")
+	@PutMapping(path = "/update")
 	public String greet3() {
 		return "Put method";
 	}
-	@GetMapping("/v1/{accountNumber}")
+	@GetMapping(path = "/{accountNumber}")
 	public ResponseEntity<Object> getAccount(@PathVariable("accountNumber") int accountNumber) {
 		System.out.println("*********** fetching: '"+accountNumber+"' ***********");
 		Account account = accountService.getAccountByNumber(accountNumber);

@@ -16,9 +16,9 @@ public class UserOAuth2Config extends WebSecurityConfigurerAdapter{
 	// called to register the user details & roles
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		auth.inMemoryAuthentication()
-		.withUser("alex").password("{noop}alex123").roles("ADMIN")
+		.withUser("alex").password("{noop}alex1234").roles("ADMIN")
 		.and()
-		.withUser("bruce").password("{noop}bruce123").roles("GUEST");
+		.withUser("bruce").password("{noop}bruce1234").roles("USER");
 	}
 
 	@Override // AuthenticationManager handles authentication in spring security
